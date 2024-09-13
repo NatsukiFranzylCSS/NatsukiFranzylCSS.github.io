@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "LineSeedSansRegular";
+    src: url(LINESeedSans_W_Rg.eot); /* For IE */
+    src: url(LINESeedSans_W_Rg.woff2) format('woff2'), /* Modern Browsers */
+         url(LINESeedSans_W_Rg.woff) format('woff'), /* Most Browsers */
+         url(LINESeedSans_W_Rg.ttf) format('truetype'); /* Legacy Browsers */
+}
+
+@font-face {
+    font-family: "LineSeedSansBold";
+    src: url(LINESeedSans_W_Bd.eot); /* For IE */
+    src: url(LINESeedSans_W_Bd.woff2) format('woff2'),
+         url(LINESeedSans_W_Bd.woff) format('woff'),
+         url(LINESeedSans_W_Bd.ttf) format('truetype');
+}
+
+h1 {
+    font-family: "LineSeedSansBold";
+    font-size: 48px;
+}
+
+h2 {
+    font-family: "LineSeedSansRegular";
+    font-size: 28px;
+}
+
+h3 {
+    font-family: "LineSeedSansRegular";
+    font-size: 18px;
+}
+h5 {
+    font-family: "LineSeedSansRegular";
+    font-size: 20px;
+    color: #f7f7f7;
+}
+
+h6 {
+    font-family: "LineSeedSansRegular";
+    font-size: 12px;
+    color: #f7f7f7;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.images img {
+    border-radius: 25px;
+}
+
+.flush-right img {
+    float: right;
+    margin-left: 20px; /* Adds space between the image and the text */
+    margin-right: auto;
+    width: 200px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center; /* Align the image and text vertically */
+    justify-content: space-between; /* Ensures text and image are spaced out */
+}
+
+.header-wrapper img {
+    margin-left: 20px; /* Space between the image and the text */
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.body{ 
+    margin: 0;
+    padding: 0;
+}
+
+.header{ 
+        position: sticky;
+        z-index: 100; /* Ensure it's above other elements when scrolling */
+        top: 0; /* Stick the header to the top of the viewport */
+        width: 100%;
+        height: 80px;
+        display: block;
+        background: linear-gradient(to right, #FE33D1, #AE00FF, #450099);;
+}
+
+
+.inner_header {
+    max-width: 1600px; /* Set a max-width to control the size */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0px 100px; /* This controls the left and right margins */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.section_2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('BlurredVersionForWebSite.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  /*  filter: blur(13px); /* Adjust blur level here */  
+    z-index: -1; /* Ensures the background stays behind the content */
+  }
+
+.section_2 {
+        height: auto;
+        padding: 50px 0 50px 0;
+		background-color: black;
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+ /* Accounts for padding: 50px top and 50px bottom */
+        position: relative; /* Allows positioning of the content */
+		z-index: -2; 
+  }
+  
+.header_text {
+    flex-grow: 1; /* Allow the text to take up remaining space after the logo */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align words to the right */
+    gap: 46px; /* Set equal spacing between the words */
+    margin-right: auto; /* Same as the left padding of .inner_header */
+    box-sizing: border-box; /* Ensure padding/margin is included */
+}
+
+.logo_container {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the left */
+    margin-right: auto; /* Allow logo to take space but push .header_text to the right */
+}
+
+.main_bodytype{
+    margin: 50px 100px ;
+    padding: 0 0px;
+}
+
+.Footer, .push {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1c0b52;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.footer_logo {
+    margin: auto; 
+    display: flexbox; 
+    align-content: center;
+}
