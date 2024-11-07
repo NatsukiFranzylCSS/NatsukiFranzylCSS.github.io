@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adjust box model */
+}
+
+body {
+    width: 100vw; /* Use viewport width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+
+@font-face {
+    font-family: "LineSeedSansRegular";
+    font-weight: normal;
+    src: url(https://raw.githubusercontent.com/FranzylNatsuki/franzylnatsuki.github.io/refs/heads/main/FONTS/LINESeedSans_W_Rg.woff2) format('woff2'), 
+        url(https://raw.githubusercontent.com/FranzylNatsuki/franzylnatsuki.github.io/refs/heads/main/FONTS/LINESeedSans_W_Rg.woff) format('woff'), 
+        url(https://raw.githubusercontent.com/FranzylNatsuki/franzylnatsuki.github.io/refs/heads/main/FONTS/LINESeedSans_W_Rg.ttf) format('truetype'); 
+    }
+
+    @font-face {
+    font-family: "LineSeedSansRegular";
+    font-weight: bold;
+    src: url(https://raw.githubusercontent.com/FranzylNatsuki/franzylnatsuki.github.io/refs/heads/main/FONTS/LINESeedSans_W_Bd.woff2) format('woff2'),
+        url(https://raw.githubusercontent.com/FranzylNatsuki/franzylnatsuki.github.io/refs/heads/main/FONTS/LINESeedSans_W_Bd.woff) format('woff'),
+        url(https://raw.githubusercontent.com/FranzylNatsuki/franzylnatsuki.github.io/refs/heads/main/FONTS/LINESeedSans_W_Bd.ttf) format('truetype');
+    }
+
+    h1 {
+        font-family: "LineSeedSansRegular";
+        font-size: 36px;
+        font-weight: normal;
+        
+    }
+
+    .spacer {
+        height: 2em; /* Adjust the height to control image position */
+    }
+    
+
+    #facePhoto {
+        display: block;
+        height: 37em;
+        width: auto;
+        overflow: hidden;
+        margin-left: 0;
+        margin-right: auto;
+        position: fixed;
+        top: 0;
+        bottom: 20px;
+        z-index: -1;
+    }
+
+
+    .nameBox {
+        text-align: center;
+        background-color: #ff98a6;
+        color: white;
+        border: 5px double white;
+        box-shadow: 2px black;
+        justify-content: center;
+        align-items: center;
+        padding: 31px;
+        position: static; 
+        margin: 10em auto 0 ;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 20px;
+        z-index: -1;
+    }
+
+    .projectBox {
+        text-align: center;
+        background-color: #125d7a;
+        color: white;
+        border: 5px double white;
+        box-shadow: 2px black;
+        justify-content: center;
+        align-items: center;
+        padding: 31px;
+        position: static; 
+        width: fit-content;
+        height: fit-content;
+        border-radius: 20px;
+        margin: 0 auto 0;
+    }
+
+    .colorBar {
+        display: block;
+        background-color: hsl(49, 100%, 92%) ;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        margin: 30em 0 0 0;
+        z-index: -3;
+    }
+    
+    .staticBar {
+        display: block;
+        justify-content: center;  /* Center horizontally */
+        align-items: center;      /* Center vertically */
+        height: auto;
+        box-sizing: border-box;
+        padding: 2em 4em;             /* Reduced duplicate padding */
+        width: 100%;
+        background-color: #ff98a6;
+        border: none;
+        position: static;
+        top: 0;
+        margin: 12em 0 0;
+        z-index: 40;
+    }
+    
+    .button {
+        scale: 80%;
+        text-align: center;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        padding: 31px;
+        margin: 2em auto 1em;
+        width: fit-content;  /* Adjust width to content and padding */
+        height: fit-content; /* Adjust height to content and padding */
+        border-radius: 20px;
+        pointer-events: grab;
+    }
+
+    h1 {
+        font-family: "LineSeedSansRegular";
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    .britishClass {
+        background-image: url(https://printawallpaper.com/wp-content/uploads/2020/07/Very_British_dn.jpg);
+        height: 40em;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 16em 0 0 0 ;
+    }
+
+    .footerBox {
+        height: auto;
+        width: 100%;
+        background-color: #125d7a;
+        display: flex;
+        justify-content: center;
+        border: none;
+        position: absolute;
+        padding: 20px;
+        margin-top: auto;
+        z-index: 0;
+        color: white;
+        box-sizing: border-box; 
+    }
+
+    .linkText {
+        margin: 1em 1em;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .linkTextA {
+        text-decoration: none;
+    }
+
+    .linkTextButton {
+        text-decoration: none;
+        color: #ff98a6;
+        text-decoration-line: none;
+    }
