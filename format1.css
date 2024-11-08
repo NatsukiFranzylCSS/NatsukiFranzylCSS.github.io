@@ -133,13 +133,13 @@ body {
     }
 
     .britishClass {
-        background-image: url(https://printawallpaper.com/wp-content/uploads/2020/07/Very_British_dn.jpg);
+        background-image: url(Very_British_dn.webp);
         height: 40em;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         padding: 16em 0 0 0 ;
+        background-attachment: fixed;
     }
 
     .footerBox {
