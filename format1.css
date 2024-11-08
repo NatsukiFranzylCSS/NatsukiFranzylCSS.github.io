@@ -138,8 +138,8 @@ body {
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 16em 0 0 0 ;
         background-attachment: fixed;
+        padding: 16em 0 0 0 ;
     }
 
     .footerBox {
