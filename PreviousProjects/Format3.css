@@ -1,0 +1,37 @@
+.statement {
+    color: maroon;
+    margin: 100px auto 50px;
+    text-align: center;
+}
+
+#greener {
+    color: green;
+}
+
+#bluer {
+    color: blue;
+}
+
+.mainframe {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    }
+
+body {
+    scale: 160%; 
+}
+
+#mainTable {
+    border: 2px solid red;
+    border-collapse: separate;
+    }
+
+#redder {
+    color: red;
+}
+
+.headers {
+        background-color: red;
+        color: white;
+}

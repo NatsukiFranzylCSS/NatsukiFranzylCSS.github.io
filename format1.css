@@ -163,6 +163,27 @@ body {
         font-size: 20px;
     }
 
+    .linkText:hover {
+        margin: 1em 1em;
+        color: rgb(255, 200, 34);
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    .linkText:active {
+        margin: 1em 1em;
+        color: rgb(255, 0, 0);
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    .linkText:visited {
+        margin: 1em 1em;
+        color: rgb(183, 0, 255);
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
     .linkTextA {
         text-decoration: none;
     }

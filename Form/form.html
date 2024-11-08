@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="formBox">
+        <center> <h1 class="formElement"> Let's Connect!! </h1> </center>
+        <label for="name" class="formElements">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email" class="formElements">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="age" class="formElements">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <label class="formElements">What computer languages do you love? (Check all that apply)</label>
+        <div class="checkBox">
+            <label class="option"><input type="checkbox" name="lang" value="C"> <img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" width="12px"> C </label>
+            <label class="option"><input type="checkbox" name="lang" value="C++"> <img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png" width="12px"> C++</label>
+            <label class="option"><input type="checkbox" name="lang" value="C#"> <img class="icons" src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" width="14px"> C#</label>
+            <label class="option"><input type="checkbox" name="lang" value="Rust"> <img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/800px-Rust_programming_language_black_logo.svg.png" width="12px"> Rust </label>
+            <label class="option"><input type="checkbox" name="lang" value="Python"> <img class="icons" src="https://cdn.iconscout.com/icon/free/png-256/free-python-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226051.png?f=webp&w=256" width="12px"> Python </label>
+            <label class="option"><input type="checkbox" name="lang" value="Javascript"> <img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" width="12px"> JavaScript </label>
+            <label class="option"><input type="checkbox" name="lang" value="React"> <img class="icons" src="https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png" width="12px"> React </label>
+        </div>
+
+        <label for="comments" class="formElements">Any comments or suggestions</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit" class="submitButton">Submit</button>
+    </div>
+</body>
+</html>
