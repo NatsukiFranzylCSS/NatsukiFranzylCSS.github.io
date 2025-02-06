@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CompSci Presentation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #1a1a1a;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .slide {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        opacity: 0;
+        transform: scale(0.9);
+        transition:
+          opacity 0.5s ease-in-out,
+          transform 0.5s ease-in-out;
+      }
+
+      .slide.active {
+        display: block;
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      p {
+        font-size: 2rem;
+        color: #ccc;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      img {
+        animation: fadeIn 1.5s ease-in-out;
+        border-radius: 20px;
+      }
+
+      .member {
+        margin: 2rem 0;
+        animation: slideIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide active">
+      <h1>Hello, we are CompSci students</h1>
+      <img src="cat-computer.gif"/>
+    </div>
+
+    <div class="slide"z
+      <div class="member">
+        <h1>
+          I am <span style="text-decoration: underline"> Franzyl Macalua </span>
+        </h1>
+        <p>will code JavaScript for money 💸💸💸</p>
+        <img src="378237185_1734838066929250_4154191696118104173_n.jpg" style="height: 235px; margin-top: 20px;"/>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="member">
+        <h1> I am <span style="text-decoration: underline"> Josh Entea </span> </h1>
+        <p>Hi, 19yrs old, first year computer science student, mao ra na, God bless you</p>
+        <img src="fcd844a9-78c4-4297-9add-df4079f634b9.jpeg" style="height: 235px; margin-top: 20px;" />
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="member">
+        <h1> I am <span style="text-decoration: underline"> Nilo Ferraren </span> </h1>
+        <p> Hey guys my name is Nilo Nuique Ferraren Jr, I am a first year computer science student, and i am from santa catalina.</p> 
+        <p> My motto in life is mottowad </p>
+        <img src="f134647b-18d6-4436-94c3-0cb20b8d9100.jpeg" style="height: 235px; margin-top: 20px;" />
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="member">
+        <h1> I am <span style="text-decoration: underline"> Miguel Jumawan </span> </h1>
+        <p>diko kabalo mo barang</p>
+        <img src="66a8b1b2-7882-43f3-b4d3-8bad31c421a9.jpeg" style="height: 235px; margin-top: 20px;" />
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="member">
+        <h1> I am <span style="text-decoration: underline"> John Paul Casiwan</span> </h1>
+        <p> “Generalist” </p>
+        <img src="dbdab2cd-f0ce-4a16-b887-c193164d7b11.jpeg" style="height: 235px; margin-top: 20px;" />
+      </div>
+    </div>
+
+    <div class="slide">
+      <h1>Thank You!</h1>
+      <p>Please Hire Us...</p>
+      <img src="FAANG-small.jpg" style="margin-top: 50px; height: 120px;">
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.add("active");
+          } else {
+            slide.classList.remove("active");
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      document.body.addEventListener("click", nextSlide);
+
+      // Initialize first slide
+      showSlide(currentSlide);
+    </script>
+  </body>
+</html>
