@@ -17,7 +17,9 @@
 
       body {
         font-family: "Poppins", sans-serif;
-        background: #1a1a1a;
+        background: linear-gradient(-45deg, #1a1a1a, #333, #555, #1a1a1a);
+        background-size: 400% 400%;
+        animation: gradientBG 10s ease infinite;
         color: #fff;
         display: flex;
         justify-content: center;
@@ -25,6 +27,12 @@
         height: 100vh;
         overflow: hidden;
         cursor: pointer;
+      }
+
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
       }
 
       .slide {
@@ -95,7 +103,7 @@
       <img src="cat-computer.gif"/>
     </div>
 
-    <div class="slide"z
+    <div class="slide">
       <div class="member">
         <h1>
           I am <span style="text-decoration: underline"> Franzyl Macalua </span>
